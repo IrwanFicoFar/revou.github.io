@@ -207,6 +207,10 @@ body {
   margin-bottom: 70px;
 }
 
+.package h1 {
+  text-align: center;
+}
+
 .package-list-1 {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -311,6 +315,9 @@ footer {
   .navbar {
     justify-content: end;
   }
+  .package {
+    padding: 50px;
+  }
 
   .navbar h1 {
     display: none;
@@ -320,5 +327,36 @@ footer {
   }
   .package-list-2 {
     grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .slider img {
+    height: 300px;
+  }
+  .slider {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  body {
+    padding: 0 30px 0 30px;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .slider img {
+    height: 200px;
+  }
+  .slider {
+    height: 250px;
+  }
+  .closing h1 {
+    font-size: 30px;
+  }
+  .header h1 {
+    font-size: 30px;
   }
 }
